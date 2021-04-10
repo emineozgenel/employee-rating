@@ -12,27 +12,27 @@ const Employee = (props) => {
   const user = Object.values(props.employee).find((c) => c.id === id);
 
   useEffect(() => {
-    if (!props.post) router.push('/404');
+    if (!props.person) router.push('/404');
   });
 
   return (
     <div className="employee">
-      {props.post ? (
+      {props.person ? (
         <div className={styles.employee_info}>
           <Head>
-            <title>{props.post.name} | Employees</title>
+            <title>{props.person.name} | Employees</title>
           </Head>
           <div className="container">
             <div className="d-flex flex-wrap">
               <img
                 className={styles.employee_info__img}
                 src="https://i.pravatar.cc/200"
-                alt={props.post.name}
+                alt={props.person.name}
               />
               <div className={styles.employee_info__right}>
-                <h2>{props.post.name}</h2>
+                <h2>{props.person.name}</h2>
                 <p>Product Lead, CEO</p>
-                <p>{props.post.name}@gmail.com</p>
+                <p>{props.person.name}@gmail.com</p>
                 <p>17 Sage St. Jamestown, NY 14701</p>
                 <p>0544 545 00 60</p>
                 {user ? (
@@ -107,7 +107,7 @@ Employee.getInitialProps = async ({ query }) => {
       `,
     });
     return { 
-      post: data ? data.users_by_pk : {}
+      person: data ? data.users_by_pk : {}
     }
   } catch (e){
     return {}
