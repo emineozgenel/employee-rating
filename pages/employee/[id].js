@@ -37,7 +37,7 @@ const Employee = (props) => {
                 <p>0544 545 00 60</p>
                 {user ? (
                   <p className={styles.employee_info__vote}>
-                    Vote: {user.vote}
+                    Oy Sayısı: {user.vote}
                   </p>
                 ) : null}
               </div>
