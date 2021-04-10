@@ -1,0 +1,38 @@
+.employee_info {
+  background: #673AB7;
+  color: #fff;
+  padding: 45px 0px;
+  &__img {
+    border-radius: 6px;
+    margin: auto;
+  }
+  h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  &__right {
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    @media (min-width: 600px) {
+      padding-left: 35px;
+      text-align: left;
+    }
+  }
+  &__vote {
+    background-color: #2e1954;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 40px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    @media (min-width: 600px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0;
+    }
+  }
+}
