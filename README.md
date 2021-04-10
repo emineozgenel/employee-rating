@@ -1,6 +1,6 @@
 # Employee Rating
 
-[Demo:](https://employee-rating.vercel.app/).
+[Demo: https://employee-rating.vercel.app/](https://employee-rating.vercel.app/).
 
 ## Getting Started
 
